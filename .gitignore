@@ -1,0 +1,16 @@
+# Donnees, non versionnees
+*.rating
+implementation1/data/*
+!implementation1/data/config.json
+
+# Sorties d'execution
+implementation1/checkpoints/
+implementation1/modele/
+implementation1/ckpt/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+*.egg-info/

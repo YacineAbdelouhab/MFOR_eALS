@@ -1,0 +1,27 @@
+[project]
+name = "mfor-eals"
+version = "0.1.0"
+description = "PySpark implementation of eALS (He et al., SIGIR'16) for implicit-feedback matrix factorization"
+requires-python = ">=3.12"
+dependencies = [
+    "pyspark>=4.0.0",
+    "numpy>=2.0",
+    # PySpark 4.2 warns that pandas 3.x is not fully supported; pin below it.
+    "pandas>=2.2,<3.0",
+    "pyarrow>=17.0",
+    "matplotlib>=3.9",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "jupyterlab>=4.2",
+    "ipykernel>=6.29",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.uv]
+package = false

@@ -1,0 +1,17 @@
+{
+  "rank": 16,
+  "regularization": 0.01,
+  "max_iterations": 20,
+  "inner_sweeps": 1,
+  "alpha": 0.4,
+  "c0": 512.0,
+  "positive_confidence_base": 1.0,
+  "positive_confidence_scale": 0.0,
+  "convergence_tolerance": 0.0,
+  "convergence_patience": 2,
+  "seed": 42,
+  "factor_scale": 0.01,
+  "partitions": 0,
+  "checkpoint_interval": 2,
+  "max_factor_norm": 100.0
+}
